@@ -1,0 +1,93 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    display: grid;
+    height: 100vh;
+    grid-template: auto;
+    margin: 0;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e9f1fa;
+    justify-content: center;
+}
+nav a
+{
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+header
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ABE4;
+    padding: 1rem;
+}
+header img
+{
+    width: 100px;
+    padding-right: 2rem;
+}
+header h1
+{
+    color: white;
+}
+main
+{
+    display: grid;
+    min-width: 500px;
+    justify-content: center;
+    grid-template-columns: 90rem;
+}
+main h2
+{
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.card
+{
+    grid-template-columns: auto 1rem auto;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 1rem;
+    overflow: hidden;
+}
+.card h3
+{
+    text-align: center;
+    background-color: #00ABE4;
+    margin-top: 0;
+    color: white;
+    padding: 1rem;
+}
+.card p
+{
+    text-align: center;
+}
+.card ul li
+{
+    list-style-type: none;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #00ABE4;
+    align-items: center;
+    justify-content: center;
+}
+footer p
+{
+    text-align: center;
+    color: white;
+}
+
