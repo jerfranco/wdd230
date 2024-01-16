@@ -6,10 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Get the last modified date of the document
     var lastModifiedDate = new Date(document.lastModified);
-    
-    // Format the last modified date to display only the time
-    var options = { hour: "numeric", minute: "numeric", second: "numeric" };
-    var formattedLastModifiedDate = lastModifiedDate.toLocaleTimeString(undefined, options);
+
+    // Format the last modified date to display date and time
+    var options = { 
+        year: "numeric", 
+        month: "long", 
+        day: "numeric", 
+        hour: "numeric", 
+        minute: "numeric", 
+        second: "numeric" 
+    };
+    var formattedLastModifiedDate = lastModifiedDate.toLocaleString(undefined, options);
 
     // Display the formatted last modified date in the lastModified span
     var lastModifiedSpan = document.getElementById("lastModified");

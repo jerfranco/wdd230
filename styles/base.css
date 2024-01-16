@@ -44,14 +44,16 @@ header h1
 main
 {
     display: grid;
-    min-width: 500px;
+    min-width: 400px;
     justify-content: center;
-    grid-template-columns: 90rem;
+    grid-template-columns: 1fr;
 }
 main h2
 {
     text-align: center;
     border-bottom: 1px solid;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .card
 {
