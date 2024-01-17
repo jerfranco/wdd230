@@ -34,7 +34,8 @@ header
 header img
 {
     width: 100px;
-    padding-right: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
 }
 header h1
 {
