@@ -6,7 +6,6 @@ body
 {
     display: grid;
     height: 100vh;
-    grid-template: auto;
     margin: 0;
 }
 nav
