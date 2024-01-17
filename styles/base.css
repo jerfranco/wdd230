@@ -67,7 +67,7 @@ main h2
     text-align: center;
     background-color: #00ABE4;
     margin-top: 0;
-    color: white;
+    color: black;
     padding: 1rem;
 }
 .card p
@@ -89,6 +89,6 @@ footer
 footer p
 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
