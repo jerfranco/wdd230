@@ -6,3 +6,61 @@
         margin-left: 1rem;
     }
 }
+
+/* @media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #e9f1fa;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} */
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    nav {
+        position: relative; /* Add this line to make the parent container relative */
+        margin: 0;
+    }
+
+    .navigation {
+        display: none; /* Hide the navigation links in mobile view */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Change top to 100% to position the menu below the header */
+        left: 0;
+        background-color: #e9f1fa;
+        z-index: 1; /* Add this line to ensure the menu is above other content */
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .navigation a {
+        /* padding: 1rem; */
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; /* Display the hamburger menu in mobile view */
+        cursor: pointer;
+    }
+    .mapFrame
+    {
+        display: none;
+    }
+}

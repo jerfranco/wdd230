@@ -8,6 +8,12 @@ body
     height: 100vh;
     margin: 0;
 }
+.navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+}
 nav
 {
     display: flex;
@@ -21,6 +27,21 @@ nav a
     color: black;
     text-decoration: none;
     padding: 1rem;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
 }
 header
 {
@@ -78,6 +99,17 @@ main h2
 .card ul li
 {
     list-style-type: none;
+}
+.mapFrame
+{
+    margin: auto;
+    border: 0;
+    max-width: 3000px;
+    width: 95%;
+    min-width: none;
+    height: 450px;
+    margin-bottom: 1rem;
+    /* width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" */
 }
 footer
 {
