@@ -36,7 +36,15 @@
         flex-direction: column;
         align-items: center;
     }
-    
+    .information
+    {
+        display: flex;
+        
+    }
+    .card
+    {
+        width: 50%;
+    }
 }
 /* Media query for mobile view */
 @media only screen and (max-width: 500px) {
