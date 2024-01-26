@@ -36,6 +36,9 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media screen and (min-width: 701px) {
     .information
     {
         display: flex;
