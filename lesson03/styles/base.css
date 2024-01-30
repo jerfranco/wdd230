@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header
+{
+    background-color: #8A0000;
+    padding: 2rem;
+    display: flex;
+    align-items: baseline;
+    color: white;
+}
+header h3
+{
+    margin-left: auto;
+}
+footer
+{
+    background-color: #8A0000;
+    padding: 2rem;
+    color: white;
+}
+.information
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main
+{
+    background-color: #fdf0d5;
+}
+.card
+{
+    border: 1px solid;
+    margin: 4rem;
+    border-radius: 10px;
+    width: 35%;
+    overflow: hidden;
+}
+.card h2
+{
+    padding: 1rem;
+    background-color: #95B9D0;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+.card p
+{
+    padding: 1rem;
+    line-height: 2rem;
+    background-color: white;
+    margin: 0;
+    height: 100%;
+}
+li
+{
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    height: auto;
+}
+.box-red {
+    width: 12px;
+    height: 12px;
+    background-color: #8A0000;
+    display: inline-block;
+    margin-left: 5px;
+    border: 1px solid;
+}
+.box-tan {
+    width: 12px;
+    height: 12px;
+    background-color: #fdf0d5;
+    display: inline-block;
+    margin-left: 5px;
+    border: 1px solid;
+}
+.box-blue {
+    width: 12px;
+    height: 12px;
+    background-color: #95B9D0;
+    display: inline-block;
+    margin-left: 5px;
+    border: 1px solid;
+}
+img
+{
+    width: 100%;
+}
+.cardimg
+{
+    border: 1px solid;
+    margin: 5rem;
+    border-radius: 10px;
+    width: 50%;
+    overflow: hidden;
+}
+.cardimg h2
+{
+    padding: 1rem;
+    background-color: #95B9D0;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
