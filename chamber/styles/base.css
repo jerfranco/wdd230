@@ -1,0 +1,148 @@
+*
+{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;
+}
+header
+{
+    display: flex;
+    color: white;
+    background-image: url('../images/16271747778_f3e5d17331_k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1rem;
+    height: 100vh;
+    align-items: baseline;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+}
+header h1
+{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+header nav
+{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    align-items: center;
+}
+nav a
+{
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+.menu-toggle
+{
+    display: none;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 1rem; 
+}
+nav a:hover
+{
+    border-bottom: 3px solid #8A0000;
+}
+nav a.active
+{
+    border-bottom: 3px solid #8A0000;
+}
+main
+{
+    background-color: #fdf0d5;
+    /* height: 100vh; */
+    padding: 1rem;
+}
+.mainInfo
+{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card
+{
+    /* border: 1px solid; */
+    width: 95%;
+    margin: 1rem;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+.card h2
+{
+    padding: 1rem;
+    background-color: #95B9D0;
+    flex-wrap: nowrap;
+    border-bottom: #95B9D0;
+}
+.card p
+{
+    padding: 1rem;
+    background-color: white;
+    height: 200px;
+}
+.weathercard
+{
+    /* border: 1px solid; */
+    width: 95%;
+    margin: 1rem;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+.weathercard h2
+{
+    padding: 1rem;
+    background-color: #95B9D0;
+}
+.weathercard p
+{
+    padding: 1rem;
+    background-color: white;
+    height: 200px;
+}
+.action
+{
+    display: flex;
+    justify-content: center;
+}
+.actionCard
+{
+    /* border: 1px solid; */
+    overflow: hidden;
+    /* border-radius: 10px; */
+    width: 95%;
+}
+.actionCard h2
+{
+    background-color: #95B9D0;
+    padding: 1rem;
+}
+.actionCard p
+{
+    padding: 1rem;
+    background-color: white;
+    height: 100px;
+}
+footer
+{
+    background-color: #8A0000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
