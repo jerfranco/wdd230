@@ -13,4 +13,17 @@ function toggleMenu() {
     }
 }
 
+window.addEventListener('resize', function () {
+    var navigation = document.querySelector('.navigation');
+    var menuToggle = document.querySelector('.menu-toggle');
 
+    if (window.innerWidth > 500) {
+        navigation.style.display = 'flex';
+        menuToggle.innerHTML = '☰';
+        menuToggle.style.color = 'black';
+    } else {
+        navigation.style.display = 'none';
+        menuToggle.innerHTML = '☰';
+        menuToggle.style.color = 'black';
+    }
+});

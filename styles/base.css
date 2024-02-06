@@ -84,6 +84,11 @@ main h2
     margin: 1rem;
     overflow: hidden;
 }
+.card a
+{
+    display: block;
+    text-decoration: none;
+}
 .card h3
 {
     text-align: center;
