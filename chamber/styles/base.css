@@ -39,11 +39,6 @@ header nav
     right: 0;
     align-items: center;
 }
-nav a
-{
-    padding-top: 0;
-    margin-bottom: 1rem;
-}
 .menu-toggle
 {
     display: none;
@@ -53,6 +48,10 @@ a
     text-decoration: none;
     color: white;
     padding: 1rem; 
+}
+nav li
+{
+    list-style-type: none;
 }
 nav a:hover
 {
