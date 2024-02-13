@@ -162,6 +162,7 @@ footer
 }
 .switch {
     position: absolute;
+    right: 300px;
     display: inline-block;
     width: 60px;
     height: 34px;
