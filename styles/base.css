@@ -128,4 +128,13 @@ footer p
     text-align: center;
     color: black;
 }
-
+.hero
+{
+	position: relative;
+}
+.temple
+{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}

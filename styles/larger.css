@@ -36,6 +36,12 @@
         flex-direction: column;
         align-items: center;
     }
+    .temple
+    {
+        top: 30px;
+        left: 40px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 701px) {
@@ -84,4 +90,9 @@
     {
         display: none;
     }
+    .temple
+    {
+        font-size: 10px;
+    }
 }
+
