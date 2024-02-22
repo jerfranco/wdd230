@@ -29,6 +29,9 @@
     .menu-toggle {
         display: block; /* Display the hamburger menu in mobile view */
         cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     header nav
     {
@@ -60,4 +63,8 @@
     {
         width: 88%;
     }
+}
+
+@media screen and (min-width: 960px) {
+    
 }

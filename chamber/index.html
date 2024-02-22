@@ -16,8 +16,14 @@
         <link rel="icon" href="images/favicon-32x32.png">
     </head>
     <body>
-        <header>   
-                <h1>San Francisco Chamber of Commerce</h1>
+        <header>
+            <section class="hero">
+                <picture>
+                    <source media="(min-width:960px)" srcset="images/wdd230-org.webp">
+                    <source media="(min-width:400px)" srcset="images/wdd230-org1.webp">
+                    <img src="images/wdd230-org2.webp">
+                </picture>
+                <h1 id="heading">San Francisco Chamber of Commerce</h1>
                 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
                 <label class="switch">
                     <input type="checkbox">
@@ -32,6 +38,7 @@
                         </li>
                     </ul>
                 </nav>
+            </section>   
         </header>
         <main>
             <section class="mainInfo">
@@ -55,10 +62,13 @@
                 <section class="weathercard">
                     <h2>Weather</h2>
                     <section class="weatherinfo">
-                        <img src="./images/weather02-1024-1545075963.png" alt="Sun and cloud forecast icon">
+                        <!-- <img src="./images/weather02-1024-1545075963.png" alt="Sun and cloud forecast icon">
                         <p class="degree">62°</p>
                         <img src="./images/iconfinder-weather-weather-forecast-moon-night-cloud-3859140_121216-2342908667.png" alt="Moon and cloud forecast icon">
-                        <p class="degree">48°</p>
+                        <p class="degree">48°</p> -->
+                        <p id="tempValue"></p>
+                        <p id="windValue"></p>
+                        <p id="windchillValue"></p>
                     </section>
                 </section>
             </section>
@@ -76,5 +86,8 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/menu.js"></script>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/size.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 </html>

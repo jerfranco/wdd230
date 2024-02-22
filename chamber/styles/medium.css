@@ -1,0 +1,7 @@
+@media screen and (max-width:400px) {
+    #heading
+    {
+        font-size: 30px;
+        top: 50px
+    }
+}
