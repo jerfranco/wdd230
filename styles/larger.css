@@ -30,7 +30,7 @@
 } */
 
 @media screen and (max-width: 700px) {
-    .navigation
+    .navigation li
     {
         display: flex;
         flex-direction: column;
@@ -75,6 +75,10 @@
         padding: 1rem;
         box-sizing: border-box;
         margin: 0;
+    }
+    .navigation li
+    {
+        flex-direction: column;
     }
 
     .navigation a {
