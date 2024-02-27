@@ -48,13 +48,18 @@
         right: 75px;
         top: 10px;
     }
+    main
+    {
+        display: block;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 519px) and (max-width: 996px) {
-    .card
+    /* .card
     {
         width: 42%;
-    }
+    } */
     .weathercard
     {
         width: 88%;

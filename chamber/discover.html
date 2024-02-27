@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>San Francisco Chamber of Commerce</title>
+        <meta name="description" content="San Francisco Chamber of Commerce">
+        <meta name="author" content="Jeremiah Franco">
+        <meta property="og:title" content="San Francisco Chamber of Commerce Home Page">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg">
+        <meta property="og:url" content="https://jerfranco.github.io/wdd230/chamber/">
+        <meta property="og:type" content="San Francisco Chamber of Commerce website">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/favicon-32x32.png">
+    </head>
+    <body>
+        <header>
+            <section class="hero">
+                <picture>
+                    <source media="(min-width:960px)" srcset="images/wdd230-org.webp">
+                    <source media="(min-width:400px)" srcset="images/wdd230-org1.webp">
+                    <img src="images/wdd230-org2.webp">
+                </picture>
+                <h1 id="heading">San Francisco Chamber of Commerce</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" onclick="toggleDarkMode()"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li class="navigation">
+                            <a class="active" href="#">Home</a>
+                            <a href="../index.html">WDD230</a>
+                            <a href="#">Placeholder</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>   
+        </header>
+        <main>
+            <section class="sidebar">
+                <p id="sidebar-message"></p>
+                <section class="card">
+                    <h2>Attractions</h2>
+                    <li>Palace of Fine Arts</li>
+                    <li>Golden Gate Bridge</li>
+                    <li>Transamerica Pyramid</li>
+                </section>
+                <section class="card">
+                    <h2>Statistical Data</h2>
+                    <p>Population: 802,805</p>
+                    <p>Diversity: <br>21.4% Chinese<br>4.5% Filipino<br>1.6% Vietnamese<br>1.3% Japanese<br>
+                    1.2% Asian Indian<br>1.2% Korean<br>0.3% Thai<br>0.2% Burmese<br>0.2% Cambodian</p>
+                </section>
+                <section class="card">
+                    <h2>Languages</h2>
+                    <p>54.58% English<br>18.60% Chinese<br>11.68% Spanish<br>3.42% Tagalog<br>1.86% Russian<br>
+                    1.45% Vietnamese<br>1.05% French<br>0.90% Japanese<br>0.88% Korean<br>0.56% German<br>
+                0.53% Italian</p>
+                </section>
+            </section>
+            <section class="photos">
+                    <p>Palace of Fine Arts</p>
+                    <img loading="lazy" src="images/palace-of-fine-arts-fountain.webp" alt="Palace of Fine Arts">
+                    <p>Transamerica Pyramid</p>
+                    <img loading="lazy" src="images/transamerica-pyramid.webp" alt="Transamerica Pyramid">
+                    <p>Golden Gate Bridge</p>
+                    <img loading="lazy" src="images/golden-gate-bridge.webp" alt="Golden Gate Bridge">
+                    <p>Lombard Street</p>
+                    <img loading="lazy" src="images/lombard-street.webp" alt="Lombard Street">
+                    <p>Pier 39</p>
+                    <img loading="lazy" src="images/pier39.webp" alt="Pier 39">
+                    <p>Fisherman's Wharf</p>
+                    <img loading="lazy" src="images/fishermans-wharf.webp" alt="Fisherman's Wharf">
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> <br>Jeremiah Franco<br>San Francisco Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/visits.js"></script>
+    </body>
+</html>
