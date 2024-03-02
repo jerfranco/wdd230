@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/forms.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="images/IMG_4530.webp" alt="Profile Picture">
+            <h1>Jeremiah Franco</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+                    <a href="chamber/">Chamber</a>
+                    <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/3?lang=eng&id=14#p14" target="_blank">Scripture</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="formmessage"></div>
+            <form action="record.html" method="get">        
+                <label for="user">Username:</label><br>
+                <input type="text" id="user" name="user" required><br>                
+                <label for="keyphrase">Password</label><br>
+                <input type="password" id="keyphrase" name="keyphrase" pattern="^[a-zA-Z0-9].{8,}$" title="8 or more alphanumerical characters"><br>
+                <label for="keyphrase2">Confirm password:</label><br>
+                <input type="password" id="keyphrase2" name="keyphrase2"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address"><br>
+                <label for="rate">Page rating:</label><br>
+                <input type="range" id="rate" name="rate" min="1" max="10" value="5" step="1" list="rangevalues">
+                <div id="rangevalue">5</div>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist><br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> <br>Jeremiah Franco<br>California</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/forms.js"></script>
+        <script src="scripts/rate.js"></script>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
+    </body>
+</html>

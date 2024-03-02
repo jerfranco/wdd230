@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+}
+form
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--form-background-color);
+    font-size: var(--form-font-size);
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+}
+:root
+{
+    background-color: lightgray;
+    --form-background-color: lightblue;
+    --form-font-size: 20px;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px;
+    height: 20px;
+}
+form input[type="submit"] {
+    width: 100px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+footer
+{
+    background-color: white;
+}
+

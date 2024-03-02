@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+    background-color: lightgray;
+}
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    text-align: center; /* Horizontal centering */
+}
+
+h2{
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Vertical and Horizontal centering */
+    font-size: 75px;
+}
+p
+{
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Vertical and Horizontal centering */
+    font-size: 50px;
+}
+
