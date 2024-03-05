@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>San Francisco Chamber of Commerce</title>
+        <meta name="description" content="San Francisco Chamber of Commerce">
+        <meta name="author" content="Jeremiah Franco">
+        <meta property="og:title" content="San Francisco Chamber of Commerce Home Page">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg">
+        <meta property="og:url" content="https://jerfranco.github.io/wdd230/chamber/">
+        <meta property="og:type" content="San Francisco Chamber of Commerce website">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/favicon-32x32.png">
+    </head>
+    <body>
+        <header>
+            <section class="hero">
+                <picture>
+                    <source media="(min-width:960px)" srcset="images/wdd230-org.webp">
+                    <source media="(min-width:400px)" srcset="images/wdd230-org1.webp">
+                    <img src="images/wdd230-org2.webp">
+                </picture>
+                <h1 id="heading">San Francisco Chamber of Commerce</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" onclick="toggleDarkMode()"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li class="navigation">
+                            <a class="active" href="#">Home</a>
+                            <a href="../index.html">WDD230</a>
+                            <a href="./discover.html">Discover</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>   
+        </header>
+        <main class="join">
+            <form method="get" action="thankyou.html">
+                <section class="asterisk">
+                    <span class="required">*</span>
+                    <p>Required</p>
+                </section>
+                <h2>Join Us!</h2>
+                <label for="fname">First name:<span class="required">*</span></label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:<span class="required">*</span></label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="position">Position:<span class="required">*</span></label>
+                <input type="text" id="position" name="position" required pattern="[a-zA-Z\s\-]{7,}"
+                title="At least 7 characters"><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com"><br>
+                <label for="phone">Phone number:<span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="organization">Organization:<span class="required">*</span></label>
+                <input type="text" id="organization" name="organization" required><br>
+                <label for="membership">Membership:</label>
+                <select id="membership" name="membership">
+                    <option value="np">NP</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select><br>
+                <label for="desc">Organization description:</label>
+                <input type="text" id="desc" name="desc"><br>
+                <input type="hidden" id="time" name="time">
+                <input type="submit" value="Submit">
+            </form>
+            <section class="benefits">
+                <h2>Membership Benefits</h2>
+                <h4>NP Membership</h4>
+                <p>This membership level is tailored for non-profit organizations dedicated to making a positive 
+                    impact in their communities. As a non-profit member, you'll gain access to our resources and 
+                    support without any associated fees. We believe in supporting your mission and helping you 
+                    achieve your goals without financial barriers.
+                </p>
+                <h4>Bronze Membership</h4>
+                <p>
+                    The Bronze Membership offers essential benefits for individuals or organizations seeking to join 
+                    our community. With this membership, you'll receive access to our basic resources and services 
+                    designed to help you grow and thrive. While it's our entry-level membership, it still provides 
+                    valuable opportunities for networking and support.
+                </p>
+                <h4>Silver Membership</h4>
+                <p>
+                    Upgrade to our Silver Membership for enhanced benefits and opportunities. This tier offers 
+                    additional perks, including access to exclusive events, specialized training sessions, and 
+                    priority support from our team. It's perfect for those who are looking to take their involvement 
+                    to the next level and connect with like-minded individuals and organizations.
+                </p>
+                <h4>Gold Membership</h4>
+                <p>
+                    Our Gold Membership is the ultimate package for individuals or organizations committed to maximizing 
+                    their impact and presence within our community. With this premium membership, you'll receive 
+                    top-tier benefits such as VIP access to all events, personalized consulting services, and prominent 
+                    recognition across our platforms. This level of membership is ideal for those who prioritize excellence 
+                    and seek unparalleled support in achieving their goals.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> <br>Jeremiah Franco<br>San Francisco Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/size.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>

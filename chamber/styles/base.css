@@ -275,3 +275,104 @@ footer
 {
     padding: 1rem;
 }
+form
+{
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem;
+    height: fit-content;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2 / 3;
+    /* margin: auto; */
+    /* width: 1000px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    align-self: center;
+}
+form input[type="submit"]
+{
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #004D00;
+    color: white;
+}
+form h2
+{
+    padding: 1rem;
+    text-align: center;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+    margin-bottom: 1rem; /* Add some spacing between inputs */
+    padding: 0.5rem; /* Add padding for better appearance */
+    width: 100%; /* Make the inputs fill the width */
+}
+.benefits
+{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    height: 600px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    height: auto;
+}
+.benefits h2
+{
+    text-align: center;
+    padding: 1rem;
+}
+.benefits h4
+{
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+}
+.join
+{
+    grid-template-columns: 15% 35% 35% 15%;
+    height: fit-content;
+    min-height: 1000px;
+}
+.required {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.asterisk
+{
+    display: flex;
+    justify-content: right;
+}
+.thankHeader
+{
+    background-color: #8A0000;
+}
+.thankHeader h1
+{
+    position: static;
+    color: white;
+    padding: 1rem;
+}
+.thankMain
+{
+    height: 66vh;
+}
+.thankMain h1
+{
+    text-align: center;
+    grid-column: 1 / 4;
+    align-self: center;
+    font-size: 100px;
+}
