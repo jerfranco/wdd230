@@ -393,3 +393,78 @@ form select {
     align-self: center;
     font-size: 100px;
 }
+article.grid {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-left: 10px;
+    overflow-y: auto;
+    /* gap: 20px; */
+}
+article.list
+{
+    overflow-y: auto;
+}
+.list .member
+{
+    margin: 1rem;
+}
+.member
+{
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+    grid-column: 1 / 4;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 0;
+	padding: 0.25rem;
+}
+.list section > * {
+	margin: 0 1rem;
+}
+.list .membership-level
+{
+    display: none;
+}
+.list .other
+{
+    display: none;
+}
+
+#members h2
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+#members p
+{
+    padding: 10px;
+}
+#members img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu {
+	margin: 1rem auto;
+	/* border: 1px solid rgba(0, 0, 0, 0.1); */
+	padding: 0.5rem;
+	/* background-color: #bed; */
+	text-align: center;
+    grid-column: 2 / 3;
+}
+.menu button
+{
+    margin: 1rem;
+}
