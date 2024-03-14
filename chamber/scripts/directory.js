@@ -72,7 +72,4 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
-  document.querySelectorAll("#members img").forEach(img => {
-    img.classList.add("list-image");
-});
 }
