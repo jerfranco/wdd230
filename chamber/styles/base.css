@@ -122,9 +122,9 @@ main
 }
 .weathercard p
 {
-    padding: 1rem;
+    padding: 5px;
     background-color: white;
-    width: 40%;
+    /* width: 40%; */
     /* height: 200px; */
 }
 .weathercard img
@@ -136,6 +136,10 @@ main
 .weatherinfo
 {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: white;
 }
 .degree
 {
@@ -188,7 +192,7 @@ footer
 }
 .switch {
     position: absolute;
-    right: 350px;
+    right: 450px;
     display: inline-block;
     top: 20px;
     width: 60px;
@@ -468,3 +472,19 @@ article.list
 {
     margin: 1rem;
 }
+
+.banner {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  #closeBanner {
+    cursor: pointer;
+  }
+  

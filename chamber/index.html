@@ -35,6 +35,7 @@
                             <a class="active" href="#">Home</a>
                             <a href="../index.html">WDD230</a>
                             <a href="./discover.html">Discover</a>
+                            <a href="./directory.html">Directory</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,6 +43,10 @@
         </header>
         <main>
             <section class="mainInfo">
+                <div id="banner" class="banner">
+                    <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+                    <button id="closeBanner">Close</button>
+                  </div>                  
                 <section class="card">
                     <h2>Current Events</h2>
                     <p><b>2024 CityBeat Breakfast: San Francisco's Heartbeat</b></p>
@@ -66,9 +71,17 @@
                         <p class="degree">62°</p>
                         <img src="./images/iconfinder-weather-weather-forecast-moon-night-cloud-3859140_121216-2342908667.png" alt="Moon and cloud forecast icon">
                         <p class="degree">48°</p> -->
-                        <p id="tempValue"></p>
+                        <!-- <p id="tempValue"></p>
                         <p id="windValue"></p>
-                        <p id="windchillValue"></p>
+                        <p id="windchillValue"></p> -->
+                        <div id="weatherContainer">
+                            <p id="temp"></p>
+                          </div>
+                          <section class="forecast">
+                            <div id="temperatures-at-three"></div>
+                          </section>
+                        
+
                     </section>
                 </section>
             </section>
@@ -93,5 +106,7 @@
         <script src="scripts/size.js"></script>
         <script src="scripts/windchill.js"></script>
         <script src="scripts/windchill.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/banner.js"></script>
     </body>
 </html>
