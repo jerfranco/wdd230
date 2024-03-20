@@ -4,7 +4,8 @@ function toggleDarkMode() {
     var darkModeToggle = document.querySelector('.switch input[type="checkbox"]');
     var card = document.querySelectorAll('.card p');
     var weather = document.querySelectorAll('.weathercard p');
-    var weatherIcon = document.querySelectorAll('.weathercard img')
+    var weatherIcon = document.querySelectorAll('.weathercard img');
+    var weatherInfo = document.querySelector('.weatherinfo');
     var action = document.querySelector('.actionCard p');
 
     mainElement.classList.toggle('dark-mode');
@@ -24,6 +25,8 @@ function toggleDarkMode() {
         });
         action.style.color = '';
         action.style.backgroundColor = '';
+        weatherInfo.style.backgroundColor = '';
+        weatherInfo.style.color = '';
     } else {
         mainElement.style.backgroundColor = 'black';
         card.forEach(function(paragraph) {
@@ -39,5 +42,7 @@ function toggleDarkMode() {
         });
         action.style.color = 'white';
         action.style.backgroundColor = '#424242';
+        weatherInfo.style.backgroundColor = '#424242';
+        weatherInfo.style.color = 'white';
     }
 }

@@ -25,6 +25,7 @@ header
     overflow: hidden;
     /* margin: 0; */
     padding: 0;
+    background-color: transparent;
 }
 header h1
 {
@@ -55,6 +56,10 @@ a
     color: black;
     padding: 1rem; 
 }
+.navigation
+{
+    background-color: transparent;
+}
 nav li
 {
     list-style-type: none;
@@ -81,6 +86,7 @@ main
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column: 1 / 4;
+    
 }
 .card
 {

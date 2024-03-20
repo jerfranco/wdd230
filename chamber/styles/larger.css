@@ -17,6 +17,8 @@
     .navigation
     {
         padding: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
     }
     .navigation a {
         /* padding: 1rem; */
@@ -30,14 +32,15 @@
         display: block; /* Display the hamburger menu in mobile view */
         cursor: pointer;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 10px;
+        right: 10px;
     }
     header nav
     {
         position: absolute;
-        top: 40px;
-        right: 125px;
+        top: 45px;
+        right: 60px;
+        /* background-color: white; */
     }
     header h1
     {
@@ -52,6 +55,7 @@
     {
         display: block;
         height: auto;
+        padding-bottom: 1rem;
     }
 }
 
@@ -62,12 +66,18 @@
     } */
     .weathercard
     {
-        width: 88%;
+        width: 95%;
     }
     .actionCard
     {
-        width: 88%;
+        width: 100%;
     }
+    main
+    {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 960px) {
