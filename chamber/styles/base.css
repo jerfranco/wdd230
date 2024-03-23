@@ -60,6 +60,7 @@ a
 .navigation
 {
     background-color: transparent;
+    overflow: hidden;
 }
 nav li
 {
