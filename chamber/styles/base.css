@@ -64,6 +64,10 @@ nav li
 {
     list-style-type: none;
 }
+nav a
+{
+    color: white;
+}
 nav a:hover
 {
     border-bottom: 3px solid #8A0000;
@@ -95,8 +99,9 @@ main
     margin: 1rem;
     border-radius: 10px;
     overflow: hidden;
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     margin-left: auto;
+    margin-right: auto;
 }
 .card h2
 {
@@ -120,6 +125,7 @@ main
     overflow: hidden;
     grid-column: 1 / 4;
     margin-left: auto;
+    margin-right: auto;
 }
 .weathercard h2
 {
@@ -265,6 +271,10 @@ footer
     position: relative;
     background-size: 100%;
 }
+.hero h1
+{
+    color: white;
+}
 .sidebar{
     grid-column: span 2; /* Span 2 columns */
     grid-row: 1 / 7; /* Span 2 rows */
@@ -301,6 +311,10 @@ footer
 .sidebar p
 {
     padding: 1rem;
+}
+.dark-mode #sidebar-message
+{
+    color: white;
 }
 form
 {
@@ -426,21 +440,33 @@ article.list
     margin: 1rem;
     border-radius: 10px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.member img
+{
+    align-self: center;
 }
 .list {
 	display: flex;
 	flex-direction: column;
     grid-column: 1 / 4;
 }
-
 .list section {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
+    /* font-size: 5px; */
 }
 .list section > * {
 	margin: 0 1rem;
+}
+.list .images
+{
+    display: none;
 }
 .list .membership-level
 {
@@ -450,7 +476,10 @@ article.list
 {
     display: none;
 }
-
+.list #members h2
+{
+    font-size: 5px;
+}
 #members h2
 {
     text-align: center;
@@ -460,23 +489,17 @@ article.list
 {
     padding: 10px;
 }
-#members img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .menu {
 	margin: 1rem auto;
 	/* border: 1px solid rgba(0, 0, 0, 0.1); */
-	padding: 0.5rem;
+	/* padding: 0.5rem; */
 	/* background-color: #bed; */
 	text-align: center;
     grid-column: 2 / 3;
 }
 .menu button
 {
-    margin: 1rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .banner {
@@ -493,4 +516,3 @@ article.list
   #closeBanner {
     cursor: pointer;
   }
-  

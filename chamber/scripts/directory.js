@@ -32,6 +32,7 @@ const displayMembers = (members) => {
     addressElement.textContent = `Address: ${member.address}`;
     phoneElement.textContent = `Phone: ${member.phone}`;
     websiteElement.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+    websiteElement.classList.add('website');
     membershipElement.textContent = `Membership Level: ${member.membership_level}`;
     membershipElement.classList.add('membership-level');
     otherInfoElement.textContent = `Other Information: ${member.other_information}`;
@@ -39,6 +40,7 @@ const displayMembers = (members) => {
     imageElement.src = `${member.image}`;
     imageElement.alt = `${member.name} Logo`;
     imageElement.width = "100";
+    imageElement.classList.add('images');
 
     // Append elements to memberDiv
     memberDiv.appendChild(nameElement);
