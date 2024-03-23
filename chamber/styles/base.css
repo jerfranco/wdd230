@@ -517,3 +517,8 @@ article.list
   #closeBanner {
     cursor: pointer;
   }
+  #indexMain
+  {
+    height: auto;
+    padding-bottom: 1rem;
+  }
