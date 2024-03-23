@@ -9,7 +9,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=37.773972&lon=-122.43
     console.log(data);
     const weather = document.getElementById("temp");
     weather.innerHTML = `<p>Today's Weather</p>
-    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather icon">
     <p>${data.main.temp}°F 
     - ${data.weather[0].main}</p>`;
 
