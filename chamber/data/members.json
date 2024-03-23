@@ -6,7 +6,7 @@
         "phone": "555-123-4567",
         "website": "https://discord.com/",
         "image": "./images/discord.png",
-        "membership_level": "Boost",
+        "membership_level": "Silver",
         "other_information": "Discord is about giving people the power to create space to find belonging in their lives. We want to make it easier for you to talk regularly with the people you care about. We want you to build genuine relationships with your friends and communities close to home or around the world. Original, reliable, playful, and relatable. These are the values that connect our users and our employees at Discord."
       },
       {
@@ -15,7 +15,7 @@
         "phone": "+18888582569",
         "website": "https://corp.roblox.com/",
         "image": "./images/roblox.png",
-        "membership_level": "Robux",
+        "membership_level": "Silver",
         "other_information": "Roblox builds the tools and platform that empower people to create their own immersive experiences,so that any world they can imagine can be brought to life. Our vision is to reimagine the way peoplecome together to create, play, explore, learn, and connect with one another."
       },
       {
@@ -24,7 +24,7 @@
         "phone": "+14152229670",
         "website": "https://twitter.com/",
         "image": "./images/twitter.png",
-        "membership_level": "N/A",
+        "membership_level": "Gold",
         "other_information": "With over 500 million users, it is one of the world's largest social networks and the fifth-most visited website in the world."
       },
       {
@@ -33,7 +33,7 @@
         "phone": "+14085267209",
         "website": "http://www.cisco.com/",
         "image": "./images/cisco.png",
-        "membership_level": "N/A",
+        "membership_level": "Gold",
         "other_information": "We pursue our purpose by closing the digital divide, empowering the future of work, fighting for equality and social justice, and building a regenerative planet."
       },
       {
@@ -42,7 +42,7 @@
         "phone": "+14155474350",
         "website": "http://salesforce.com/",
         "image": "./images/salesforce.png",
-        "membership_level": "N/A",
+        "membership_level": "Gold",
         "other_information": "Salesforce brings together all your data, from any source. Customer 360, our complete suite of products, unites your sales, service, marketing, commerce, and IT teams with a single, shared view of customer information."
       },
       {
@@ -51,7 +51,7 @@
         "phone": "+14084862000",
         "website": "https://www.nvidia.com/",
         "image": "./images/nvidia.png",
-        "membership_level": "N/A",
+        "membership_level": "Silver",
         "other_information": "NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society."
       },
       {
@@ -60,7 +60,7 @@
         "phone": "+14158322000",
         "website": "https://www.adobe.com/",
         "image": "./images/adobe.png",
-        "membership_level": "N/A",
+        "membership_level": "Silver",
         "other_information": "Adobe is making the world more creative, productive, and personalized with artificial intelligence as a co-pilot that amplifies human ingenuity."
       }
     ]
