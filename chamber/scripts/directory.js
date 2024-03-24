@@ -31,7 +31,7 @@ const displayMembers = (members) => {
     nameElement.textContent = member.name;
     addressElement.textContent = `Address: ${member.address}`;
     phoneElement.textContent = `Phone: ${member.phone}`;
-    websiteElement.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+    websiteElement.innerHTML = `Website:<a href="${member.website}" target="_blank">${member.website}</a>`;
     websiteElement.classList.add('website');
     membershipElement.textContent = `Membership Level: ${member.membership_level}`;
     membershipElement.classList.add('membership-level');
