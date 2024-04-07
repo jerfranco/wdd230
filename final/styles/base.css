@@ -225,13 +225,8 @@ nav a:hover
     text-align: left;
     margin-left: 23%;
 }
-.weather p
-{
-    text-align: left;
-    width: 500px;
-    padding-left: 15%;
-}
-.weather img
+
+.weather .purple
 {
     width: 400px;
     height: 400px;
@@ -398,4 +393,20 @@ form input[type="submit"]
 .value {
     margin-left: 33%;
     min-width: 100px; /* Adjust minimum width as needed */
+}
+
+#temp
+{
+    width: 30%;
+    height: auto;
+    margin-left: 50px;
+}
+.weather-icon
+{
+    width: 50%;
+    height: auto;
+}
+.weather p
+{
+    width: 100%;
 }
