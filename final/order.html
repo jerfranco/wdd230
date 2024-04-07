@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <nav id="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <h1><a href="index.html">Bountiful Foods</a></h1>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                    <a class="active" href="#">Order</a>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="orderMain">
+            <img src="images/smoothie.jpg" alt="Smoothie">
+            <h1 class="intro">Bountiful Foods</h1>
+            <section class="formInfo">
+                <form action="confirmation.html" method="get">
+                    <h2>Order Now</h2><br>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required class="rounded-input"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="rounded-input"><br>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" required class="rounded-input"><br>
+                    <label for="fruitSelect1">Select Fruit 1:</label>
+                    <select id="fruitSelect1" name="fruitSelect1" class="rounded-input"></select>
+                    <br>
+                    <label for="fruitSelect2">Select Fruit 2:</label>
+                    <select id="fruitSelect2" name="fruitSelect2" class="rounded-input"></select>
+                    <br>
+                    <label for="fruitSelect3">Select Fruit 3:</label>
+                    <select id="fruitSelect3" name="fruitSelect3" class="rounded-input"></select><br>
+                    <label for="special">Special Instructions:</label><br>
+                    <textarea id="special" name="special" class="rounded-input"></textarea><br>
+                    <p>Payment is received when drink is picked up!</p><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>jeremiahfranco3@gmail.com (925)234-2419</p>
+        </footer>
+        <script src="scripts/scroll.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/fruits.js"></script>
+    </body>
+</html>

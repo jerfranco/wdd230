@@ -1,0 +1,250 @@
+@media only screen and (max-width: 500px) {
+    nav {
+        position: fixed; /* Add this line to make the parent container relative */
+        margin: 0;
+    }
+
+    .navigation {
+        display: none; /* Hide the navigation links in mobile view */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Change top to 100% to position the menu below the header */
+        left: 0;
+        background-color: white;
+        z-index: 1; /* Add this line to ensure the menu is above other content */
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .navigation li
+    {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        /* padding: 1rem; */
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; /* Display the hamburger menu in mobile view */
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .images
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .images img
+    {
+        width: 80%;
+        height: 80%;
+        padding-bottom: 2rem;
+    }
+    .intro
+    {
+        width: 400px;
+        font-size: 60px;
+    }
+    .summary h2
+    {
+        margin: 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .summary img
+    {
+        width: 200px;
+        height: 200px;
+        top: 830px;
+        right: 120px;
+    }
+    .summary p
+    {
+        font-size: 15px;
+        width: auto;
+        margin: 0;
+        padding: 1rem;
+        margin-left: 0;
+    }
+    .action h2
+    {
+        margin: 0;
+        text-align: center;
+    }
+    .action img
+    {
+        width: 200px;
+        height: 200px;
+        top: 1275px;
+        right: 120px;
+    }
+    .action button
+    {
+        width: 200px;
+        height: 100px;
+        top: 1150px;
+        right: 26%;
+    }
+    .weather h2
+    {
+        margin: 0;
+        text-align: center;
+    }
+    .weather p
+    {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .weather img
+    {
+        width: 200px;
+        height: 200px;
+        top: 1730px;
+        right: 120px;
+    }
+}
+@media screen  and (min-width: 501px) {
+    .menu-toggle
+    {
+        display: none;
+    }
+    .weather p
+    {
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width: 700px) and (min-width: 501px) {
+    nav a
+    {
+        font-size: 10px;
+    }
+    nav h1
+    {
+        font-size: 20px;
+    }
+    nav
+    {
+        width: auto;
+    }
+    .intro
+    {
+        width: 400px;
+        font-size: 80px;
+    }
+    .summary p
+    {
+        margin: 0;
+        padding: 1rem;
+        width: 80%;
+        /* text-align: center; */
+        width: auto;
+        font-size: 15px;
+    }
+    .summary img
+    {
+        width: 250px;
+        height: 250px;
+        top: 780px;
+        right: 20%;
+    }
+    .summary h2
+    {
+        margin: 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .action h2
+    {
+        margin: 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .action img
+    {
+        width: 250px;
+        height: 250px;
+        top: 1230px;
+        right: 150px;
+    }
+    .action button
+    {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        top: 1150px;
+        right: 220px;
+    }
+    .weather h2
+    {
+        margin: 0;
+        text-align: center;
+    }
+    .weather img
+    {
+        width: 250px;
+        height: 250px;
+        top: 1680px;
+        right: 150px;
+    }
+    .weather p
+    {
+        text-align: center;
+        width: auto;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1188px) {
+    .summary img
+    {
+        width: 300px;
+        height: 300px;
+        right: 50px;
+        top: 675px;
+    }
+    .summary h2
+    {
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    .summary p
+    {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    .action img
+    {
+        width: 300px;
+        height: 300px;
+        left: 50px;
+        top: 1120px;
+    }
+    .action h2
+    {
+        font-size: 30px;
+        margin-right: 100px;
+    }
+    .action button
+    {
+        right: 50px;
+        width: 200px;
+        height: 150px;
+    }
+    .weather img
+    {
+        width: 300px;
+        height: 300px;
+        top: 1600px;
+        right: 50px;
+    }
+    .weather p
+    {
+        padding-left: 50px;;
+    }
+}

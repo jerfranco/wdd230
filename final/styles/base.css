@@ -1,0 +1,401 @@
+*
+{
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Dancing Script", cursive;
+}
+main
+{
+    /* height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: 96px; */
+    margin-top: 96px;
+    min-height: 100vh;
+}
+main img
+{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+}
+#indexMain
+{
+    background-color: #e0c3fc;
+}
+
+/* nav
+{
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+}
+nav li
+{
+    list-style-type: none;
+    margin-left: 100px;
+}
+nav a
+{
+    text-decoration: none;
+    padding: 1rem;
+} */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    /* padding-top: 2rem; */
+    background-color: white;
+    z-index: 1000; /* Ensure the navigation is above other content */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: #034A03;
+    transition: height 0.5s ease;
+    height: 56px;
+    /* width: fit-content; */
+}
+.navigation
+{
+    margin-left: auto;
+}
+nav.scrolled
+{
+    height: 23px;
+}
+nav h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 40px;
+}
+nav h1 a
+{
+    text-decoration: none;
+    color: #034A03;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px; /* Adjust spacing between navigation items */
+}
+nav ul li a {
+    text-decoration: none;
+    /* color: white; Optional: text color */
+    padding: 5px 20px;
+    border-bottom: 3px solid transparent;
+    color: #034A03;
+}
+.active
+{
+    border-bottom: 3px solid #034A03;
+    font-weight: bold;
+    color: #034A03;
+}
+nav a:hover
+{
+    border-color: #034A03;
+    /* font-weight: bold; */
+    color: #034A03;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 1rem; */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.intro
+{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* right: 50%; */
+    background-color: rgb(255, 255, 255, 0.8);
+    font-size: 100px;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    border-radius: 68% 32% 80% 20% / 31% 51% 49% 69% ;
+    width: 500px;
+    margin: 0;
+    color: #034A03;
+}
+
+.summary
+{
+    background-color: #e0c3fc;
+    /* display: flex; */
+}
+.summary h2
+{
+    text-align: left;
+    margin-left: 23%;
+}
+.summary p
+{
+    text-align: left;
+    /* margin-left: 14%; */
+    margin-left: 15%;
+    /* width: 500px; */
+    width: 35%;
+}
+/* .summary img
+{
+    border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+    height: 300px;
+    width: 400px;
+} */
+.summary img
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 630px;
+    right: 15%;
+    border-radius: 30% 70% 70% 30% / 30% 58% 42% 70%;
+}
+/* #summary-img
+{
+    background-color: white;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 610px;
+    right: 14%;
+    border-radius: 31% 69% 60% 40% / 71% 17% 83% 29% ;
+} */
+.action
+{
+    background-color: #d2f7fb;
+}
+.action h2
+{
+    text-align: right;
+    margin-right: 23%;
+}
+.action p
+{
+    text-align: right;
+    margin-right: 22%;
+}
+.action img
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 1090px;
+    right: 55%;
+    border-radius: 66% 34% 80% 20% / 20% 82% 18% 80% ;
+}
+.action button
+{
+    position: absolute;
+    right: 18%;
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    border-radius: 79% 21% 70% 30% / 36% 40% 60% 64%;
+    border: none;
+    background-color: #fdd073;
+    transition: transform 0.5s ease;
+    top: 1220px;
+}
+.action button:hover
+{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.weather
+{
+    background-color: #fbf8cc;
+}
+.weather h2
+{
+    text-align: left;
+    margin-left: 23%;
+}
+.weather p
+{
+    text-align: left;
+    width: 500px;
+    padding-left: 15%;
+}
+.weather img
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 1540px;
+    right: 15%;
+    border-radius: 45% 55% 41% 59% / 71% 38% 62% 29% ;
+}
+.card
+{
+    /* margin-right: auto;
+    margin-left: auto; */
+    width: 100%;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 0 10px rgb(0, 0, 0); */
+    /* margin: 3rem auto 3rem auto; */
+    margin: 0;
+    /* height: fit-content; */
+    /* min-height: 450px; */
+    height: 450px;
+}
+.card h2
+{
+    /* background-color: #424242; */
+    padding: 2rem;
+    font-size: 35px;
+    /* color: white; */
+    /* border-bottom: solid black; */
+}
+.card p
+{
+    /* padding: 5rem 0 5rem 0; */
+    /* height: 250px; */
+    font-size: 25px;
+}
+footer
+{
+    text-align: center;
+    padding: 2rem;
+    color: #034A03;
+}
+.formInfo
+{
+    display: flex;
+    justify-content: center;
+}
+form
+{
+    background-color: white;
+    padding: 50px 100px 50px 100px;
+    margin: 1rem;
+    height: fit-content;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    align-self: center;
+    /* width: 33%; */
+}
+.rounded-input
+{
+    border-radius: 10px;
+}
+form input[type="submit"]
+{
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
+.aboutContent
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+}
+.mapFrame
+{
+    width: 75%;
+    margin: auto;
+}
+#orderMain
+{
+    background-color: #fbf8cc;
+}
+#aboutMain
+{
+    background-color: #d2f7fb;
+}
+.images
+{
+    display: flex;
+    margin-top: 12rem;
+    padding-bottom: 10rem;
+}
+.images img
+{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#confMain
+{
+    padding: 0 5rem;
+}
+.thank
+{
+    font-size: 45px;
+}
+.info
+{
+    /* box-shadow: 0 0 10px lightgray;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex; */
+    display: flex;
+
+}
+.info h2
+{
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+.nutrition
+{
+    /* margin-left: 30%; */
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-shadow: 5px 0 10px lightgray;
+}
+.nutrition h2
+{
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+.nutrition p
+{
+    padding: 1rem;
+}
+.order
+{
+    /* margin-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    box-shadow: 0 0 10px lightgray;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+}
+.order p
+{
+    padding: 1rem;
+}
+.label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px; /* Adjust spacing as needed */
+}
+
+.value {
+    margin-left: 33%;
+    min-width: 100px; /* Adjust minimum width as needed */
+}

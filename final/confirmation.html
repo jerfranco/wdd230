@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <nav id="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <h1><a href="index.html">Bountiful Foods</a></h1>
+            <ul class="navigation">
+                <li>
+                    <a class="active" href="#">Home</a>
+                    <a href="order.html">Order</a>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="confMain">
+            <h1 class="thank">Thank you for your order!</h1>
+            <section class="info">
+                <section class="order">
+                <h2>Order Information</h2>
+                    <p>Full name: <span id="first"></span>.</p>
+                    <p>Email: <span id="email"></span>.</p>
+                    <p>Phone number: <span id="phone"></span>.</p>
+                    <p>Fruit choices: <span id="fruit1"></span></p>
+                    <p>Fruit choices: <span id="fruit2"></span></p>
+                    <p>Fruit choices: <span id="fruit3"></span></p>
+                    <p>Special Instructions: <span id="special"></span></p>
+                </section>
+                <!-- <section class="order">
+                    <p><span class="label">Full name:</span> <span class="value" id="first"></span>.</p>
+                    <p><span class="label">Email:</span> <span class="value" id="email"></span>.</p>
+                    <p><span class="label">Phone number:</span> <span class="value" id="phone"></span>.</p>
+                    <p><span class="label">Fruit choices:</span> <span class="value" id="fruit1"></span></p>
+                    <p><span class="label">Fruit choices:</span> <span class="value" id="fruit2"></span></p>
+                    <p><span class="label">Fruit choices:</span> <span class="value" id="fruit3"></span></p>
+                    <p><span class="label">Special Instructions:</span> <span class="value" id="special"></span></p>
+                </section> -->
+                <section class="nutrition">
+                    <h2>Nutrition</h2>
+                    <!-- <p><span class="label">Total Calories:</span> <span class="value" id="totalCalories"></span></p>
+                    <p><span class="label">Total Fat:</span> <span class="value" id="totalFat"></span></p>
+                    <p><span class="label">Total Sugar:</span> <span class="value" id="totalSugar"></span></p>
+                    <p><span class="label">Total Carbohydrates:</span> <span class="value" id="totalCarbohydrates"></span></p>
+                    <p><span class="label">Total Protein:</span> <span class="value" id="totalProtein"></span></p> -->
+                    <p>Total Calories: <span id="calories">0</span></p>
+                </section>
+            </section>
+            
+        </main>
+        <footer>
+            <p>jeremiahfranco3@gmail.com (925)234-2419</p>
+        </footer>
+        <script src="scripts/scroll.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/confirmation.js"></script>
+        <script src="scripts/fruits.js"></script>
+    </body>
+</html>
