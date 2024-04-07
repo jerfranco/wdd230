@@ -8,7 +8,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
     // Work with the JSON data here
     console.log(data);
     const weather = document.getElementById("temp");
-    weather.innerHTML = `<img id="weather-icon" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+    weather.innerHTML = `<img id="weather-icon" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon">
     <p>${Math.round((data.main.temp - 273.15) * 9/5 + 32)}°F 
     - ${data.weather[0].main}</p>`;
 
