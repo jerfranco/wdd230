@@ -410,3 +410,15 @@ form input[type="submit"]
 {
     width: 100%;
 }
+#aboutMain picture
+{
+    display: flex;
+    justify-content: center;
+}
+#aboutMain picture img
+{
+    width: 75%;
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
