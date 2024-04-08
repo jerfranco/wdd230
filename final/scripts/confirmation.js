@@ -149,11 +149,11 @@ fetch('./data/fruits.json')
         });
 
         // Display total calories
-        document.querySelector('#totalCalories').textContent = totalCalories;
-        document.querySelector('#totalCarbohydrates').textContent = totalCarbohydrates;
-        document.querySelector('#totalProtein').textContent = totalProtein;
-        document.querySelector('#totalFat').textContent = totalFat;
-        document.querySelector('#totalSugar').textContent = totalSugar;
+        document.querySelector('#totalCalories').textContent = totalCalories.toFixed(1);
+        document.querySelector('#totalCarbohydrates').textContent = totalCarbohydrates.toFixed(1);
+        document.querySelector('#totalProtein').textContent = totalProtein.toFixed(1);
+        document.querySelector('#totalFat').textContent = totalFat.toFixed(1);
+        document.querySelector('#totalSugar').textContent = totalSugar.toFixed(1);
     })
     .catch(error => {
         console.error('Error fetching fruits data:', error);
