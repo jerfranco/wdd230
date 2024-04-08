@@ -266,7 +266,7 @@ nav a:hover
 footer
 {
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     color: #034A03;
 }
 .formInfo
@@ -426,4 +426,40 @@ form input[type="submit"]
 {
     display: flex;
     align-items: center;
+}
+.contact
+{
+    margin-top: 2rem;
+    padding: 2rem;
+    box-shadow: 0px 0 10px lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+footer img
+{
+    width: 50px;
+    height: auto;
+}
+.contactInfo
+{
+    /* display: flex; */
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    /* padding-top: 1rem; */
+}
+.email
+{
+    padding-top: 1rem;
+}
+.link
+{
+    padding-right: 30rem;
+    padding-left: 30rem;
+}
+.social
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 20rem 1rem 20rem;
 }
