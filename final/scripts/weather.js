@@ -20,3 +20,72 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
     // Handle any errors that occurred during the fetch
     console.error('There was a problem with the fetch operation:', error);
   });
+
+  function displayTemperaturesAtThree(data) {
+    const container = document.getElementById("temperatures-at-three");
+    container.style.textAlign = "center";
+  
+    // Clear previous content
+    container.innerHTML = "";
+  
+    // Extract temperatures at 03:00 for tomorrow, the day after tomorrow, and the day after that
+    const temperatures = {};
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const dayAfterTomorrow = new Date(today);
+    dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 2);
+    const dayAfterThat = new Date(today);
+    dayAfterThat.setDate(dayAfterThat.getDate() + 3);
+  
+    const datesToDisplay = [
+      tomorrow.toISOString().split('T')[0],
+      dayAfterTomorrow.toISOString().split('T')[0],
+      dayAfterThat.toISOString().split('T')[0]
+    ];
+  
+    data.list.forEach(item => {
+      const date = item.dt_txt.split(' ')[0];
+      const time = item.dt_txt.split(' ')[1];
+      const temperature = item.main.temp.toFixed(2);
+  
+      if (datesToDisplay.includes(date) && time === '12:00:00') {
+        if (!temperatures[date]) {
+          temperatures[date] = temperature;
+        }
+      }
+    });
+  
+    // Create and append elements for each day's temperature at 03:00
+    Object.entries(temperatures).forEach(([date, temperature]) => {
+      const temperatureItem = document.createElement("div");
+      const forcastHeading = document.createElement("p");
+      temperatureItem.textContent = `${date}: ${temperature} °F`;
+
+      temperatureItem.style.margin = "1rem";
+
+      container.appendChild(temperatureItem);
+    });
+  }
+  
+  // Update the API URL with your actual API endpoint
+  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=37.773972&lon=-122.431297&appid=012620101562c2ad81e26c7f2eca399b&units=imperial";
+  
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch forecast data: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Display temperatures at 03:00 for tomorrow, the day after tomorrow, and the day after that
+      displayTemperaturesAtThree(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+
+
+    const container = document.getElementById("temperatures-at-three");
+const forecastHeading = document.createElement("p");
