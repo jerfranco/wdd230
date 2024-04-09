@@ -11,8 +11,6 @@ document.querySelector('#fruit2').textContent = params.get("fruitSelect2");
 document.querySelector('#fruit3').textContent = params.get("fruitSelect3");
 
 
-// document.querySelector('#special').textContent = params.get("special");
-// document.querySelector('#yourgender').textContent = params.get("gender");
 
 let specialInstructions = params.get("special");
 if (specialInstructions && specialInstructions.trim() !== "") {
@@ -24,103 +22,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 
 const selectedFruit = params.get("fruitSelect1");
-// fetch('./data/fruits.json')
-//   .then(response => response.json())
-//   .then(data => {
-//     // Retrieve the calorie value based on the selected fruit
-//     const calorieValue = data[selectedFruit];
 
-//     // Display the calorie value in the HTML element
-//     document.querySelector('#fruit1a').textContent = `${selectedFruit}: ${calorieValue} calories`;
-//   })
-//   .catch(error => console.error('Error loading JSON file:', error));
-
-// fetch('./data/fruits.json')
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-//         return response.json();
-//     })
-//     .then(fruitsData => {
-//         const selectedFruitName = params.get("fruitSelect1");
-//         const selectedFruit = fruitsData.find(fruit => fruit.name === selectedFruitName);
-
-//         if (selectedFruit) {
-//             document.querySelector('#fruit1a').textContent = selectedFruit.name;
-//             document.querySelector('#fruit1Calories').textContent = selectedFruit.nutritions.calories;
-//         } else {
-//             document.querySelector('#fruit1a').textContent = "Unknown fruit";
-//             document.querySelector('#fruit1Calories').textContent = "Unknown calories";
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Error fetching fruits data:', error);
-//     });
-
-// fetch('./data/fruits.json')
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-//         return response.json();
-//     })
-//     .then(fruitsData => {
-//         const selectedFruitNames = [params.get("fruitSelect1"), params.get("fruitSelect2"), params.get("fruitSelect3")];
-
-//         selectedFruitNames.forEach((selectedFruitName, index) => {
-//             const selectedFruit = fruitsData.find(fruit => fruit.name === selectedFruitName);
-//             const fruitElementId = `fruit${index + 1}a`;
-//             const caloriesElementId = `fruit${index + 1}Calories`;
-
-//             if (selectedFruit) {
-//                 document.querySelector(`#${fruitElementId}`).textContent = selectedFruit.name;
-//                 document.querySelector(`#${caloriesElementId}`).textContent = selectedFruit.nutritions.calories;
-//             } else {
-//                 document.querySelector(`#${fruitElementId}`).textContent = "Unknown fruit";
-//                 document.querySelector(`#${caloriesElementId}`).textContent = "Unknown calories";
-//             }
-//         });
-//     })
-//     .catch(error => {
-//         console.error('Error fetching fruits data:', error);
-//     });
-
-// JavaScript
-// fetch('./data/fruits.json')
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error('Network response was not ok');
-//         }
-//         return response.json();
-//     })
-//     .then(fruitsData => {
-//         const selectedFruitNames = [params.get("fruitSelect1"), params.get("fruitSelect2"), params.get("fruitSelect3")];
-//         let totalCalories = 0;
-
-//         selectedFruitNames.forEach((selectedFruitName, index) => {
-//             const selectedFruit = fruitsData.find(fruit => fruit.name === selectedFruitName);
-//             const fruitElementId = `fruit${index + 1}a`;
-//             const caloriesElementId = `fruit${index + 1}Calories`;
-
-//             if (selectedFruit) {
-//                 document.querySelector(`#${fruitElementId}`).textContent = selectedFruit.name;
-//                 document.querySelector(`#${caloriesElementId}`).textContent = selectedFruit.nutritions.calories;
-//                 totalCalories += selectedFruit.nutritions.calories;
-//             } else {
-//                 document.querySelector(`#${fruitElementId}`).textContent = "Unknown fruit";
-//                 document.querySelector(`#${caloriesElementId}`).textContent = "Unknown calories";
-//             }
-//         });
-
-//         // Display total calories
-//         document.querySelector('#totalCalories').textContent = totalCalories;
-//     })
-//     .catch(error => {
-//         console.error('Error fetching fruits data:', error);
-//     });
-
-// JavaScript
 fetch('./data/fruits.json')
     .then(response => {
         if (!response.ok) {

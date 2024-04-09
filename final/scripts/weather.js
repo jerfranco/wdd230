@@ -21,8 +21,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
     console.error('There was a problem with the fetch operation:', error);
   });
 
-  function displayTemperaturesAtThree(data) {
-    const container = document.getElementById("temperatures-at-three");
+  function displayTemperaturesAtNine(data) {
+    const container = document.getElementById("temperatures-at-nine");
     container.style.textAlign = "center";
   
     // Clear previous content
@@ -32,11 +32,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
     const temperatures = {};
     const today = new Date();
     const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setDate(tomorrow.getDate() + 0);
     const dayAfterTomorrow = new Date(today);
-    dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 2);
+    dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 1);
     const dayAfterThat = new Date(today);
-    dayAfterThat.setDate(dayAfterThat.getDate() + 3);
+    dayAfterThat.setDate(dayAfterThat.getDate() + 2);
   
     const datesToDisplay = [
       tomorrow.toISOString().split('T')[0],
@@ -49,7 +49,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
       const time = item.dt_txt.split(' ')[1];
       const temperature = item.main.temp.toFixed(2);
   
-      if (datesToDisplay.includes(date) && time === '12:00:00') {
+      if (datesToDisplay.includes(date) && time === '09:00:00') {
         if (!temperatures[date]) {
           temperatures[date] = temperature;
         }
@@ -69,7 +69,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
   }
   
   // Update the API URL with your actual API endpoint
-  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=37.773972&lon=-122.431297&appid=012620101562c2ad81e26c7f2eca399b&units=imperial";
+  const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=33.15809000&lon=-117.35059000&appid=012620101562c2ad81e26c7f2eca399b&units=imperial";
   
   fetch(apiUrl)
     .then(response => {
@@ -80,12 +80,12 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=33.15809000&lon=-117.
     })
     .then(data => {
       // Display temperatures at 03:00 for tomorrow, the day after tomorrow, and the day after that
-      displayTemperaturesAtThree(data);
+      displayTemperaturesAtNine(data);
     })
     .catch(error => {
       console.error(error);
     });
 
 
-    const container = document.getElementById("temperatures-at-three");
+    const container = document.getElementById("temperatures-at-nine");
 const forecastHeading = document.createElement("p");
