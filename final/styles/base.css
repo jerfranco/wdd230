@@ -443,24 +443,10 @@ footer img
     width: 50px;
     height: auto;
 }
-.contactInfo
-{
-    /* display: flex; */
-    /* justify-content: space-between;
-    padding-left: 15rem;
-    padding-right: 15rem; */
-    /* padding-top: 1rem; */
-}
 .email
 {
     padding-top: 1rem;
 }
-/* .link
-{
-    padding-right: 30rem;
-    padding-left: 30rem;
-    width: 100%;
-} */
 .social
 {
     padding-top: 1rem;
